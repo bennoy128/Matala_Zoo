@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoo</title>
+    <script src="./main.js"></script>
+    <script src="login.js"></script>
+    <link rel="stylesheet" href="zoo.css" />
+    <nav>
+      <div><span style="font-size: 15px">Visitor</span></div>
+      <div></div>
+      <div></div>
+    </nav>
+  </head>
+  <body >
+    <div id="all_page">
+      <h1>The Zoo<span style="font-size: 75px">&#128009;</span></h1>
+      <div id="filter-container"> </div>
+        <!-- <input type = radio name="predator-type" id="predRadio"> </input>
+        <label for="predRadio" > Predators  </label>
+        <input type = radio name="predator-type" id="nonpredRadio"> </input> -->
+      <div id="all-buttons">
+      <select id="predetor-selector" oninput="setFilter('isPredator', value)">
+        <option value="">Select...</option>
+        <option value="true">Predator</option>
+        <option value="false">Non-Predator</option>
+      </select>
+      
+      <select id="color-selector" oninput="setFilter('color', value)" >
+        <option value="">Select...</option>
+      </select>
+      
+      <select id="weight-selector" oninput="setFilter(`weight`, this.value)">
+        <option value="">Select...</option>
+        <option value="100"> 100</option>
+        <option value="1200">More than 1000</option>
+      </select>
+      <select id="height-selector" oninput="setFilter(`height`, this.value)">
+        <option value="">Select...</option>
+        <option value="120"> 100</option>
+        <option value="200">200</option>
+      </select>
+      <select id="habitat-selector" oninput="setFilter(`habitat`, this.value)">
+        <option value="">Select...</option>
+        <option value="land"> land animal </option>
+        <option value="sea">sea animal</option>
+      </select>
+      </div>
+      <div id="animal-cards" style="
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: space-between" >
+    </div>
+      <div id="all-inputs">
+        </div>
+          <!-- <label for="land">land</label>
+          <input type="radio" id="land" name="Habitat" />
+          <label for="sea">sea</label>
+          <input type="radio" id="sea" name="Habitat" placeholder="Search" /> -->
+    
+        </div>
+        <div>
+    
+        </div>
+      </div>
+      <button id="button-clear">clear</button>
+    </div></div>
+    <script src="zoo.js"></script>
+  </body>
+</html>
